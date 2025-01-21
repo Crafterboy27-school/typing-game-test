@@ -1,0 +1,1 @@
+export const words = await ((await fetch("/data/words.txt")).text())
