@@ -1,4 +1,4 @@
-export const words = ( (await ((await fetch("/data/words.txt")).text())) ).split("\n")
+export const words = ( (await ((await fetch("/data/words.json")).json())) ).words
 
 export function GetRandomWords(count = 1){
     let ret = []
